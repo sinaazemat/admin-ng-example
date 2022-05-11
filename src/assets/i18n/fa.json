@@ -1,0 +1,10 @@
+{
+  "profile": "پروفایل",
+  "changePassword": "تغییر رمز عبور",
+  "exit": "خروج",
+  "add": "افزودن",
+  "refresh": "بروزرسانی",
+  "viewAll": "مشاهده همه",
+  "notificationUnReadMsg": "شما چند پیام خوانده نشده دارید",
+  "notificationEmptyList": "هیچ پیام خوانده نشده ی وجود ندارد"
+}

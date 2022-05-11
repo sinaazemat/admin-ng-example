@@ -1,0 +1,90 @@
+<div class="row">
+    <div class="col-md-3 mb">
+        <card-box [header]="false">
+            <div class="chart-box">
+                <h4>تعداد کاربران</h4>
+                <h2>250</h2>
+                <img width="50" src="assets/images/pie-chart.png" alt="">
+            </div>
+        </card-box>
+    </div>
+    <div class="col-md-3 mb">
+        <card-box [header]="false">
+            <div class="chart-box">
+                <h4>تعداد سفارشات کل</h4>
+                <h2>1450</h2>
+                <img width="50" src="assets/images/stock.png" alt="">
+            </div>
+        </card-box>
+    </div>
+    <div class="col-md-3 mb">
+        <card-box [header]="false">
+            <div class="chart-box">
+                <h4>فروش ماهانه</h4>
+                <h2>300</h2>
+                <img width="50" src="assets/images/line-chart.png" alt="">
+            </div>
+        </card-box>
+    </div>
+    <div class="col-md-3 mb">
+        <card-box [header]="false">
+            <div class="chart-box">
+                <h4>سود خالص ماه</h4>
+                <h2>$2500</h2>
+                <img width="50" src="assets/images/increasing.png" alt="">
+            </div>
+        </card-box>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-6 mb">
+
+        <card-box title="سفارشات" description="لیست جدیدترین سفارشات بررسی نشده">
+            <table mat-table [dataSource]="dataSource">
+                <ng-container matColumnDef="position">
+                    <th mat-header-cell *matHeaderCellDef> No. </th>
+                    <td mat-cell *matCellDef="let element"> {{element.position}} </td>
+                </ng-container>
+                <ng-container matColumnDef="name">
+                    <th mat-header-cell *matHeaderCellDef> Name </th>
+                    <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+                </ng-container>
+                <ng-container matColumnDef="weight">
+                    <th mat-header-cell *matHeaderCellDef> Weight </th>
+                    <td mat-cell *matCellDef="let element"> {{element.weight}} </td>
+                </ng-container>
+                <ng-container matColumnDef="symbol">
+                    <th mat-header-cell *matHeaderCellDef> Symbol </th>
+                    <td mat-cell *matCellDef="let element"> {{element.symbol}} </td>
+                </ng-container>
+                <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+            </table>
+        </card-box>
+    </div>
+    <div class="col-md-6 mb">
+        <card-box title="کاربران" description="لیست کاربران جدید">
+            <table mat-table [dataSource]="dataSource">
+                <ng-container matColumnDef="position">
+                    <th mat-header-cell *matHeaderCellDef> No. </th>
+                    <td mat-cell *matCellDef="let element"> {{element.position}} </td>
+                </ng-container>
+                <ng-container matColumnDef="name">
+                    <th mat-header-cell *matHeaderCellDef> Name </th>
+                    <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+                </ng-container>
+                <ng-container matColumnDef="weight">
+                    <th mat-header-cell *matHeaderCellDef> Weight </th>
+                    <td mat-cell *matCellDef="let element"> {{element.weight}} </td>
+                </ng-container>
+                <ng-container matColumnDef="symbol">
+                    <th mat-header-cell *matHeaderCellDef> Symbol </th>
+                    <td mat-cell *matCellDef="let element"> {{element.symbol}} </td>
+                </ng-container>
+                <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+            </table>
+        </card-box>
+    </div>
+</div>

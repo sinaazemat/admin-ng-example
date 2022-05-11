@@ -1,0 +1,10 @@
+{
+  "profile": "profile",
+  "changePassword": "change password",
+  "exit": "exit",
+  "add": "add",
+  "refresh": "refresh",
+  "viewAll": "view all",
+  "notificationUnReadMsg": "You have some new notifications",
+  "notificationEmptyList": "You have several unread notifications"
+}
